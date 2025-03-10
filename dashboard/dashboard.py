@@ -6,7 +6,6 @@ import seaborn as sns
 
 st.set_page_config(layout="wide")
 
-# Load dataset
 @st.cache_data
 def load_data():
     df_hour = pd.read_csv("dashboard/hour_clean.csv")
@@ -16,7 +15,6 @@ def load_data():
 
 df_hour, df_day = load_data()
 
-# --- LAYOUT DASHBOARD ---
 st.title("📊 Bike Sharing Dashboard")
 
 # --- TABS ---
