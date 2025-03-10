@@ -9,8 +9,8 @@ st.set_page_config(layout="wide")
 # Load dataset
 @st.cache_data
 def load_data():
-    df_hour = pd.read_csv("dashboard\\hour_clean.csv")
-    df_day = pd.read_csv("dashboard\\day_clean.csv")
+    df_hour = pd.read_csv("dashboard\hour_clean.csv")
+    df_day = pd.read_csv("dashboard\day_clean.csv")
     df_hour['yr'] = df_hour['yr'] + 2011 
     return df_hour, df_day
 
